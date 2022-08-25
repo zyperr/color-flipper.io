@@ -1,0 +1,132 @@
+*{
+    font-family: 'Silkscreen', cursive;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s all;
+}
+header{
+    background-color: #486bc4;
+}
+header h1{
+    text-align: center;
+    margin: 10px;
+    font-size: 50px;
+    animation: cambiarcolor 15s infinite;
+}
+
+.nav-buttons{
+    display: flex;
+    justify-content: center;
+}
+/*estilos de botones*/
+.btnstyle{
+    margin: 10px;
+    padding: 10px;
+    border: 3px solid #000;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #eefefe;
+    cursor: pointer;
+}
+.btnstyle:hover{
+    transform: scale(0.9);
+    background-color: #d6f5f5;
+}
+
+
+/*declaracion de animation para los botones*/
+#btn-primary{
+    animation: primary 5s infinite;
+}
+#btn-secondary{
+    animation: secondary 5s infinite;
+}
+#btn-tertiary{
+    animation: tertiary 6s infinite;
+}
+#btn-hexadecimal{
+    animation: hexadecimal 20s infinite;
+}
+main{
+    position: relative;
+    top: 400px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 400px;
+    background-color: #000;
+    color: #fefefe;
+    border-radius: 10px;
+}
+/*animacion para cambio de colores en letras de botones*/
+@keyframes primary{
+    0%{color: red;}
+    50%{color: yellow;}
+    100%{color: blue;}
+}
+@keyframes secondary{
+    0%{color:orange}
+    50%{color: green;}
+    100%{color: purple;}
+}
+@keyframes tertiary{
+    0%{color: #FF5A04;}
+    30%{color: #DEFF00;}
+    60%{color: #8408FF;}
+    80%{color: #FFC600;}
+    90%{color: #00A08C;}
+    100%{color: #CE0063;}
+}
+@keyframes hexadecimal{
+    0%{color: #00FFFF;}
+    5%{color: #7FFFD4;}
+    10%{color: #FFE4C4;}
+    15%{color: #A52A2A;}
+    20%{color: #DC143C;}
+    25%{color: #556B2F;}
+    30%{color: #2F4F4F;}
+    35%{color: #696969;}
+    40%{color: #FF00FF;}
+    45%{color: #FFD700;}
+    50%{color: #DAA520;}
+    55%{color: #008000;}
+    60%{color: #ADFF2F;}
+    65%{color: #4B0082;}
+    70%{color: #7CFC00;}
+    75%{color: #20B2AA;}
+    80%{color: #E6E6FA;}
+    85%{color: #BDB76B;}
+    90%{color: #8B008B;}
+    95%{color: #6E2C00;}
+    100%{color: #D4AC0D;}
+}
+@keyframes cambiarcolor{
+    0%{color:rgb(50, 205, 50);}
+    5%{color: rgb(250, 240, 230);}
+    10%{color: rgb(128, 0, 0);}
+    15%{color:rgb(147, 112, 219) ;}
+    20%{color: 	rgb(186, 85, 211);}
+    25%{color:rgb(67, 65, 65);}
+    30%{color:rgb(112, 111, 111);}
+    45%{color: rgb(212, 211, 211);}
+    50%{color:rgb(234, 234, 234) ;}
+    55%{color:rgb(255, 255, 255) ;}
+    60%{color: rgb(240, 248, 255);}
+    65%{color: 	rgb(250, 235, 215);}
+    75%{color: 	rgb(0, 255, 255);}
+    80%{color: rgb(127, 255, 212);}
+    85%{color:rgb(255, 255, 0);}
+    90%{color:rgb(255, 165, 0);}
+    95%{color:rgb(255, 69, 0);}
+    100%{color:rgb(60, 179, 113);}
+}
